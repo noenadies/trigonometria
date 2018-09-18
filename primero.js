@@ -6,5 +6,5 @@ function queestrigonometria(){
 
 	alert(vquestrigonometr);
 
-	window.Android.showToast("hablaandroid","vquestrigonometr","");
+	window.Android.showToast("hablaandroid",vquestrigonometr,"");
 }
