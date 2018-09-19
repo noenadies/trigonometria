@@ -14,7 +14,7 @@
 
 <body>
 <div class="center-div"><button id="idbttrigonoetria" class="btmenu" >Trigonometría</button> <button id="idbtangulo" class="btmenu" >Angulo</button>
-<button id="idbttrigonoetria" class="btmenu" >Trigonometría</button>  <button id="modalBtn" class="button">Click Here</button></div>
+<button id="idbtmangulo" class="btmenu" >MEDICIÓN DE ÁNGULOS</button>  <button id="modalBtn" class="button">Click Here</button></div>
 
 
   <div id="simpleModal" class="modal">
@@ -46,9 +46,30 @@
       </div>
       <div class="modal-body">
        <p class="classp" id="idpangulo">Abertura formada por dos semirectas con un mismo origen denominado vértice.
-       </p><p class="classp" id="idpangulo2">El ángulo plano XOP, Figura , está formado por dos líneas O X y O P. Al punto O se le llama vértice ya las líneas medias se les llama lados del ángulo. Más comúnmente, puede pensarse que un ángulo plano se genera si se gira (en un plano) una línea de la posición inicial O X a la posición terminal OP. Entonces, O es otra vez el vértice, (O X) al que se llama lado inicial,  y  (O P)se llama lado terminal del ángulo.Un ángulo así generado se llama positivo si la dirección de rotación (indicada por una flecha curvada) va en contradel movimiento de las manecillas del reloj y negativo si la dirección de rotación es igual a la de las manecillas del reloj.El ángulo es positivo en la Figura  (a) y (c), negativo en la Figura  (b).</p><br>
+       </p><p class="classp" id="idpangulo2">El ángulo plano XOP, Figura , está formado por dos líneas O X y O P. Al punto O se le llama vértice ya las líneas medias se les llama lados del ángulo. Más comúnmente, puede pensarse que un ángulo plano se genera si se gira (en un plano) una línea de la posición inicial O X a la posición terminal OP. Entonces, O es otra vez el vértice, (O X) al que se llama lado inicial,  y  (O P)se llama lado terminal del ángulo.Un ángulo así generado se llama positivo si la dirección de rotación (indicada por una flecha curvada) va en contradel movimiento de las manecillas del reloj y negativo si la dirección de rotación es igual a la de las manecillas del reloj.El ángulo es positivo en la Figura  (a) , negativo en la Figura  (b).</p><br>
        <img class="img" src="img/anguloplano.jpg"><br> <img class="img" src="img/angulogiro.jpg"><br>
        <button onclick="hangulo()">  &#128266;</button>
+      </div>
+      <div class="modal-footer">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="midmangulo" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+          <span id="idbtclosemedicionangul" class="closeBtn">&times;</span>
+          <h2>MEDICIÓN DE ÁNGULOS
+</h2>
+      </div>
+      <div class="modal-body">
+       <p class="classp" id="idpmangulo1">MEDICIÓN DE ÁNGULOS: Un grado (°) se define como la medida central del ángulo subtendido por un arco de círculo igual a 1/360 de la circunferencia de un círculo. Un minuto (') es 1/60 de un grado; un segundo (") es 1/60 de un minuto, o sea 1/3600 de un grado.</p>EJEMPLO:<br>(a)¼(36°24') = 9°6' (b) ½(127°24') = ½(126°84') = 63°42'<br>(c) ½(81°15') = ½(80°
+75') = 40°37.5'o 40°37'30" <p class="classp" id="idpmangulo1">Cuando se convierten ángulos expresados en forma decimal a minutos y segundos, la regla general es que las décimas de ángulo serán convertidas al minuto más cercano y el resto de los ángulos se redondeará a la centésima más cercana y entonces se cambiarán al segundo más cercano. Cuando se convierten ángulos en minutos y segundos a forma decimal, el resultado en minutos se redondea a décimas y los ángulos en segundos redondean el resultado a centésimas.</p><br>
+
+
+       <button onclick="hmangulo()">  &#128266;</button>
       </div>
       <div class="modal-footer">
         <h3></h3>
