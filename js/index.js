@@ -126,6 +126,69 @@ document.getElementById("idpresulangulo").innerHTML="Conversión a grados: "+vva
 
 
 
+// Get modal element
+var ladangulo = document.getElementById("midlaangulo");
+// Get open modal button
+var btlaangulo = document.getElementById("idbtlaangulo");
+// Get close button
+var btcloselaangulo = document.getElementById("idbtcloselaangulo");
+
+// Listen for open click
+btlaangulo.addEventListener('click', openlangulo);
+// Listen for close click
+btcloselaangulo.addEventListener('click', closelaangulo);
+// Listen for outside click
+
+
+// Function to open modal
+function openlangulo(){
+  ladangulo.style.display = 'block';
+}
+
+// Function to close modal
+function closelaangulo(){
+ ladangulo.style.display = 'none';
+}
+var vsmangulo="";
+function hmangulo(){
+	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML
+	+document.getElementById("idpmangulo2").innerHTML;
+
+	alert(vsmangulo);
+habaandroid(vsmangulo);
+	//window.Android.showToast("hablaandroid",vsangulo,"");
+}
+
+var vvss="";
+var vvtt="";
+var vvrd="";
+function valoresangulos(){
+vvtt=document.getElementById("idtt").value;
+vvss=document.getElementById("idss").value;
+vvrd=document.getElementById("idrd").value;
+if(vvss!="" && vvtt !="" && vvrd ==""){
+	alert(1);
+	vvrd=vvss/vvtt;
+	document.getElementById("idrearco").innerHTML="El radio : "+vvrd+" unidades";
+}
+
+if(vvss!="" && vvtt =="" && vvrd !==""){
+	alert(2);
+	vvtt=vvss/vvrd;
+	document.getElementById("idrearco").innerHTML="El angulo : "+vvtt+" radianes";
+}
+
+if(vvss=="" && vvtt !="" && vvrd !==""){
+	vvss=vvtt*vvrd;
+	document.getElementById("idrearco").innerHTML="El arco : "+vvss+" unidades";
+}
+
+if(document.getElementById("cang").checked){
+vvalangar=vvalangar/Math.PI;
+document.getElementById("idrearco").innerHTML="Conversión a grados: "+vvalorangulo;
+}
+
+}
 
 
 
