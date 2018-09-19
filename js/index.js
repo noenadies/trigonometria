@@ -150,7 +150,7 @@ function closelaangulo(){
  ladangulo.style.display = 'none';
 }
 var vslaar="";
-function hmangulo(){
+function hlalarc(){
 	vslaar=document.getElementById("idplaangulo").innerHTML;
 
 	alert(vslaar);
