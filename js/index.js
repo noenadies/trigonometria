@@ -44,12 +44,12 @@ var mdangulo = document.getElementById('midangulo');
 // Get open modal button
 var btangulo = document.getElementById('idbtangulo');
 // Get close button
-var btcloseangulo = document.getElementsByClassName('closeBtn')[1];
+var btcloseangulo = document.getElementById("idbtcloseangulo");
 
 // Listen for open click
 btangulo.addEventListener('click', openangulo);
 // Listen for close click
-closeBtn.addEventListener('click', closeangulo);
+btcloseangulo.addEventListener('click', closeangulo);
 // Listen for outside click
 
 
