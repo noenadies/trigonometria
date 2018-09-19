@@ -149,13 +149,12 @@ function openlangulo(){
 function closelaangulo(){
  ladangulo.style.display = 'none';
 }
-var vsmangulo="";
+var vslaar="";
 function hmangulo(){
-	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML
-	+document.getElementById("idpmangulo2").innerHTML;
+	vslaar=document.getElementById("idplaangulo").innerHTML;
 
-	alert(vsmangulo);
-habaandroid(vsmangulo);
+	alert(vslaar);
+habaandroid(vslaar);
 	//window.Android.showToast("hablaandroid",vsangulo,"");
 }
 
