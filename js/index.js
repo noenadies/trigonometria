@@ -97,12 +97,12 @@ function openmngulo(){
 function closemangulo(){
  mmdangulo.style.display = 'none';
 }
-var vsangulo="";
+var vsmangulo="";
 function hmangulo(){
-	vsangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML;
+	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML;
 
-	alert(vsangulo);
-habaandroid(vsangulo);
+	alert(vsmangulo);
+//habaandroid(vsangulo);
 	//window.Android.showToast("hablaandroid",vsangulo,"");
 }
 
