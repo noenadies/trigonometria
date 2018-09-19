@@ -99,15 +99,29 @@ function closemangulo(){
 }
 var vsmangulo="";
 function hmangulo(){
-	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML;
+	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML
+	+document.getElementById("idpmangulo2").innerHTML;
 
 	alert(vsmangulo);
 habaandroid(vsmangulo);
 	//window.Android.showToast("hablaandroid",vsangulo,"");
 }
 
+var vvalorangulo=0;
+function valoresangulos(){
+vvalorangulo=document.getElementById("identraangulo").value;
+if(document.getElementById("cradianes").checked){
+	vvalorangulo=vvalorangulo*Math.PI/180;
+
+	document.getElementById("idpresulangulo").innerHTML="Conversión a radianes: "+vvalorangulo;
 
 
+}if(document.getElementById("cgrados").checked){
+vvalorangulo=vvalorangulo/Math.PI*180;
+document.getElementById("idpresulangulo").innerHTML="Conversión a grados: "+vvalorangulo;
+}
+
+}
 
 
 
