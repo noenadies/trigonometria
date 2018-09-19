@@ -102,7 +102,7 @@ function hmangulo(){
 	vsmangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML;
 
 	alert(vsmangulo);
-//habaandroid(vsangulo);
+habaandroid(vsangulo);
 	//window.Android.showToast("hablaandroid",vsangulo,"");
 }
 
