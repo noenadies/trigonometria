@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', closequetrigonometri);
 // Listen for outside click
 
 function habaandroid(sthabla){
-//window.Android.showToast("hablaandroid",sthabla,"");
+window.Android.showToast("hablaandroid",sthabla,"");
 
 }
 // Function to open modal
