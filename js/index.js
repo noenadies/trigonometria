@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', closequetrigonometri);
 // Listen for outside click
 
 function habaandroid(sthabla){
-window.Android.showToast("hablaandroid",sthabla,"");
+//window.Android.showToast("hablaandroid",sthabla,"");
 
 }
 // Function to open modal
@@ -74,19 +74,46 @@ habaandroid(vsangulo);
 
 
 
+// Get modal element
+var mmdangulo = document.getElementById("midmangulo");
+// Get open modal button
+var btmangulo = document.getElementById("idbtmangulo");
+// Get close button
+var btclosemangulo = document.getElementById("idbtclosemedicionangul");
+
+// Listen for open click
+btmangulo.addEventListener('click', openmngulo);
+// Listen for close click
+btclosemangulo.addEventListener('click', closemangulo);
+// Listen for outside click
 
 
-
-
-
-
-
-
-
-
-
-fdefineangulo()
-
-function fdefineangulo(){
-	
+// Function to open modal
+function openmngulo(){
+  mmdangulo.style.display = 'block';
 }
+
+// Function to close modal
+function closemangulo(){
+ mmdangulo.style.display = 'none';
+}
+var vsangulo="";
+function hmangulo(){
+	vsangulo=document.getElementById("idpmangulo").innerHTML+document.getElementById("idpmangulo1").innerHTML;
+
+	alert(vsangulo);
+habaandroid(vsangulo);
+	//window.Android.showToast("hablaandroid",vsangulo,"");
+}
+
+
+
+
+
+
+
+
+
+
+
+
