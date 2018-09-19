@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en" >
 
-		<style type="text/css">
-			
+<head>
+  <meta charset="UTF-8">
+  <title>simplemodal</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
-body
-{
-  padding:0px;
-  background-color: #fcfcfc;
-}
-.center-div
-{
-  margin: auto;
- width: 100%;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 3px;
-}
-.classp
-{
+  
+</head>
 
-	padding: 20px;
+<body>
 
-  width:96%;
-font-weight:normal;color:#000000;letter-spacing:1pt;word-spacing:2pt;font-size:12px;text-align:justify;font-family:arial, helvetica, sans-serif;line-height:1;
-  background-color: #ccc;
+  <button id="modalBtn" class="button">Click Here</button>
 
-}
-		</style>
-		<meta charset=utf-8>
-		<title>My first three.js app</title>
-		<style>
-	}
-		</style>
-	</head>
-	<body> <h1>TRIGONOMETRIA</h1><div class="center-div">
-		
-		<p class="classp" id="idpqueestrig">La trigonometría, como la palabra lo indica, se refiere a la medida de los lados y los ángulos de un triángulo. La trigonometría plana, de la que se ocupa este libro, se limita a triángulos que se encuentran en un plano. La trigonometría se basa en ciertas relaciones, llamadas funciones trigonométricas, que se definen en el siguiente capítulo. Las primeras aplicaciones de las funciones trigonométricas fueron para topografía, navegación e ingeniería. Estas funciones desempeñan también un importante papel en el estudio de toda clase de fenómenos vibratorios: sonido, luz, electricidad, etc. En consecuencia, una porción considerable de la asignatura se refiere al estudio de las propiedades y relaciones entre las funciones trigonométricas.</p>
-		<button onclick="queestrigonometria()">Hablar</button>
-	</div>
-		<script src="primero.js"></script>
-		<script>
-			// Our Javascript will go here.
-		</script>
-	</body>
+  <div id="simpleModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Trigonometría</h2>
+      </div>
+      <div class="modal-body">
+       <p class="classp" id="idpqueestrig">La trigonometría, como la palabra lo indica, se refiere a la medida de los lados y los ángulos de un triángulo. La trigonometría plana, se limita a triángulos que se encuentran en un plano. La trigonometría se basa en ciertas relaciones, llamadas funciones trigonométricas, que se definen más adelante . Estas funciones desempeñan también un importante papel en el estudio de toda clase de fenómenos vibratorios: sonido, luz, electricidad, etc. En consecuencia, una porción considerable de la asignatura se refiere al estudio de las propiedades y relaciones entre las funciones trigonométricas.</p>
+       <button onclick="queestrigonometria()">  &#128266;</button>
+      </div>
+      <div class="modal-footer">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
 </html>
