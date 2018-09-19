@@ -14,7 +14,9 @@
 
 <body>
 <div class="center-div"><button id="idbttrigonoetria" class="btmenu" >Trigonometría</button> <button id="idbtangulo" class="btmenu" >Angulo</button>
-<button id="idbtmangulo" class="btmenu" >MEDICIÓN DE ÁNGULOS</button>  <button id="modalBtn" class="button">Click Here</button></div>
+<button id="idbtmangulo" class="btmenu" >MEDICIÓN DE ÁNGULOS</button>
+<button id="idbtlaangulo" class="btmenu" >LONGITUD DE ARCO</button>
+  <button id="modalBtn" class="button">Click Here</button></div>
 
 
   <div id="simpleModal" class="modal">
@@ -66,7 +68,7 @@
       </div>
       <div class="modal-body">
        <p class="classp" id="idpmangulo">MEDICIÓN DE ÁNGULOS: Un grado (°) se define como la medida central del ángulo subtendido por un arco de círculo igual a 1/360 de la circunferencia de un círculo. Un minuto (') es 1/60 de un grado; un segundo (") es 1/60 de un minuto, o sea 1/3600 de un grado.</p>EJEMPLO:<br>(a)¼(36°24') = 9°6' (b) ½(127°24') = ½(126°84') = 63°42'<br>(c) ½(81°15') = ½(80°
-75') = 40°37.5'o 40°37'30" <p class="classp" id="idpmangulo1">Cuando se convierten ángulos expresados en forma decimal a minutos y segundos, la regla general es que las décimas de ángulo serán convertidas al minuto más cercano y el resto de los ángulos se redondeará a la centésima más cercana y entonces se cambiarán al segundo más cercano. Cuando se convierten ángulos en minutos y segundos a forma decimal, el resultado en minutos se redondea a décimas y los ángulos en segundos redondean el resultado a centésimas.</p><br><img class="img" src="img/radian.jpg"><p class="classp" id="idpmangulo2">Un radián (rad) se define como la medida del ángulo central subtendido por un arco de un círculo igual al radio del círculo. La circunferencia de un círculo = 2 pi (radio) y subtiende un ángulo de 360°. Entonces, 2 pi radianes = 360°; de tal forma que:</p>
+75') = 40°37.5'o 40°37'30" <p class="classp" id="idpmangulo1">Cuando se convierten ángulos expresados en forma decimal a minutos y segundos, la regla general es que las décimas de ángulo serán convertidas al minuto más cercano y el resto de los ángulos se redondeará a la centésima más cercana y entonces se cambiarán al segundo más cercano. Cuando se convierten ángulos en minutos y segundos a forma decimal, el resultado en minutos se redondea a décimas y los ángulos en segundos redondean el resultado a centésimas.</p><br><img class="img" src="img/radian.jpg"><p class="classp" id="idpmangulo2">Un radián (rad) se define como la medida del ángulo central subtendido por un arco de un círculo igual al radio del círculo. La circunferencia de un círculo = 2 pi (radio) y subtiende un ángulo de 360°. Entonces, 2 pi radianes = 360°; de tal forma que ver imagen de abajo:</p>
 Ejemplos<div><p id ="idpresulangulo">Convrsion</p> Ingrese  valor  <input id="identraangulo" type="number" ><br>Radianes: <input type="checkbox" id="cradianes">Grados: <input type="checkbox" id="cgrados"></div>
 
 
@@ -79,6 +81,36 @@ Ejemplos<div><p id ="idpresulangulo">Convrsion</p> Ingrese  valor  <input id="id
     </div>
   </div>
   
+
+
+  <div id="midlaangulo" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+          <span id="idbtcloselaangulo" class="closeBtn">&times;</span>
+          <h2>LONGITUD DE ARCO</h2>
+      </div>
+      <div class="modal-body">
+       <p class="classp" id="idplaangulo">En un círculo de radio r, un ángulo central  ( θ), de radianes. Ver Figura , intercepta un arco de longitud s ,S=r*θ.esto es, la longitud de arco = el radio x el ángulo central en radianes. (NOTA: s y r pueden medirse en cualquier unidad de longitud que convenga pero deben expresarse en la misma unidad.) </p><br>
+       <img class="img" src="img/arco.jpg"><br> 
+      
+<p id ="idrearco">Convrsion</p> Ingrese S: <input id="idss" type="number" style="width: 90px;"   ><br>
+Ingrese θ: <input id="idtt" type="number" style="width: 90px;"   ><br>
+Ingrese r:  <input id="idrd" type="number" style="width: 90px;"   ><br>
+<button onclick="valoresangulos()">Calcular</button>
+       <button onclick="hlaangulo()">  &#128266;</button>
+      </div>
+      <div class="modal-footer">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
 
     <script  src="js/index.js"></script>
 
